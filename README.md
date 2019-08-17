@@ -43,7 +43,9 @@ Configuration Requirments:
      nfs rd,nointr,rsize=32768,wsize=32768,bg,nconnect=[8 or 16 seem the best so far]
 
  *Packages:
+  
   zypper update -y
+  
   zypper install -y sysstat python
 
 
@@ -55,11 +57,15 @@ How To Modify The Execution Plan JSON Files:
  *The contents of both json files look something like below, pay attention to 0th, 1st, 2nd, and 4th posiitons in the list
 
  *0th and 1st: Mount Points:
+  
   In the 0th and 1st positions, replace the value associated with the key "Value" with your SAP HANA log and data path respectively.
+  
   As the tests are run one at a time, the same mount point may be used for both.
 
  *2nd: Scale-Up or Scale Out:
+  
   Only fill in the value associated with the "Value" key if you plan on doing a scale out test, leave it empty if the test is scale up.
+  
   The value, if used, is in the format of "<ip | hostname>,<ip | hostname>,..."
 
  *4th: Run Count
