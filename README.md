@@ -32,9 +32,8 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
     > a the workbook all results are to be loaded into.
     > Open the included .xlsx file and see follow steps 2 onward as shown in the How To Use Tab of the workbook. 
    
-### Configuration Requirments:
-
- * Instance Types:
+## Configuration Requirments:
+### Instance Types:
      * Azure: m1_128s
      * GCP; n1-highmem-32
      * AWS: C5.18xlarge
@@ -49,7 +48,6 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
          ```
          nfs rd,nointr,rsize=32768,wsize=32768,bg
          ```
-
 * Packages:
     * sysstat
     * python
