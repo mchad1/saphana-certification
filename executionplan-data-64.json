@@ -1,0 +1,301 @@
+{
+   "Variables": [
+      {
+         "Comment": "The <Value> should be adapted to the HANA log volume path",
+         "Name": "LogVolume",
+         "Value": "/mnt/kpi",
+         "Request": "false"
+      },
+      {
+         "Comment": "The <Value> should be adapted to the HANA data volume path",
+         "Name": "DataVolume",
+         "Value": "/mnt/kpi",
+         "Request": "false",
+         "Profile": "LNX"
+      },
+      {
+         "Comment": "Hosts for scale-out measurements, keep this empty for scale-up",
+         "Name": "Hosts",
+         "Value": "",
+         "Request": "false"
+      },
+      {
+         "Comment": "Persistent memory mount pathes, keep this empty fo non nvm systems",
+         "Name": "NvmBasePath",
+         "Value": "",
+         "Request": "false"
+      },
+      {
+         "Comment": "The <Value> is the general test repeat count",
+         "Name": "TestRepeatCount",
+         "Value": "1",
+         "Request": "false"
+      },
+      {
+         "Comment": "Port for network tests",
+         "Name": "Port",
+         "Value": "50001",
+         "Request": "false"
+      },
+      {
+         "Comment": "Remote port for scaleout triggers (this is the port hcmt is listening to)",
+         "Name": "RemotePort",
+         "Value": "50000",
+         "Request": "false"
+      },
+      {
+         "Comment": "Size of data used for network io",
+         "Name": "DataSize",
+         "Value": "100000000",
+         "Request": "false"
+      },
+      {
+         "Comment": "The <Value> is the networktest repeat count",
+         "Name": "NetworktestRepeatCount",
+         "Value": "5",
+         "Request": "false"
+      },
+      {
+         "Comment": "Block size in Bytes, the blocks are secured with an CRC",
+         "Name": "BlockSize",
+         "Value": "1024",
+         "Request": "false"
+      },
+      {
+         "Comment": "HCI number of blocks (->16MB file size)",
+         "Name": "NumOfBlocks",
+         "Value": "16384",
+         "Request": "false"
+      },
+      {
+         "Comment": "HCI maximum blocks per chunk (->1MB biggest block)",
+         "Name": "MaxBlocksPerChunk",
+         "Value": "1024",
+         "Request": "false"
+      },
+      {
+         "Comment": "HCI test duration in seconds(->20s)",
+         "Name": "TestDuration",
+         "Value": "20",
+         "Request": "false"
+      },
+      {
+         "Comment": "HCI reopen file after some seconds (->2s)",
+         "Name": "FileReopenTime",
+         "Value": "2",
+         "Request": "false"
+      },
+      {
+         "Comment": "File system concurrent execution (->true)",
+         "Name": "FSConcurrentExecution",
+         "Value": "true",
+         "Request": "false"
+      },
+
+
+      {
+         "Comment": "Log Volume: Controls whether read requests are submitted asynchronously, default is 'on'",
+         "Name": "LogAsyncReadSubmit",
+         "Value": "on",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Controls whether read requests are submitted asynchronously, default is 'on'",
+         "Name": "DataAsyncReadSubmit",
+         "Value": "on",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Controls whether write requests can be submitted asynchronously",
+         "Name": "LogAsyncWriteSubmitActive",
+         "Value": "on",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Controls whether write requests can be submitted asynchronously",
+         "Name": "DataAsyncWriteSubmitActive",
+         "Value": "on",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Controls which blocks are written asynchronously. Only relevant if AsyncWriteSubmitActive is 'on' or 'auto' and file system is flagged as requiring asynchronous write submits",
+         "Name": "LogAsyncWriteSubmitBlocks",
+         "Value": "all",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Controls which blocks are written asynchronously. Only relevant if AsyncWriteSubmitActive is 'on' or 'auto' and file system is flagged as requiring asynchronous write submits",
+         "Name": "DataAsyncWriteSubmitBlocks",
+         "Value": "all",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Maximum number of parallel I/O requests per completion queue",
+         "Name": "LogExtMaxParallelIoRequests",
+         "Value": "128",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Maximum number of parallel I/O requests per completion queue",
+         "Name": "DataExtMaxParallelIoRequests",
+         "Value": "128",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Maximum batch size for asynchronous submits",
+         "Name": "LogExtMaxSubmitBatchSize",
+         "Value": "64",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Maximum batch size for asynchronous submits",
+         "Name": "DataExtMaxSubmitBatchSize",
+         "Value": "64",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Minimum batch size for asynchronous submits",
+         "Name": "LogExtMinSubmitBatchSize",
+         "Value": "16",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Minimum batch size for asynchronous submits",
+         "Name": "DataExtMinSubmitBatchSize",
+         "Value": "16",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Number of completion queues",
+         "Name": "LogExtNumCompletionQueues",
+         "Value": "1",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Number of completion queues",
+         "Name": "DataExtNumCompletionQueues",
+         "Value": "1",
+         "Request": "false"
+      },
+      {
+         "Comment": "Log Volume: Number of completion queues",
+         "Name": "LogExtNumSubmitQueues",
+         "Value": "1",
+         "Request": "false"
+      },
+      {
+         "Comment": "Data Volume: Number of completion queues",
+         "Name": "DataExtNumSubmitQueues",
+         "Value": "1",
+         "Request": "false"
+      },
+      {
+         "Comment": "Size of the kernel I/O queue per completion queue",
+         "Name": "ExtSizeKernelIoQueue",
+         "Value": "512",
+         "Request": "false"
+      }
+
+
+   ],
+   "ExecutionPlan": [
+      {
+         "ID": "D664D001-933D-41DE-A904F304AEB67906",
+         "Note": "File System Write Test",
+         "ExecutionVariants": [
+            {
+               "ScaleOut": {
+                  "Port": "${RemotePort}",
+                  "Hosts": "${Hosts}",
+                  "ConcurrentExecution": "${FSConcurrentExecution}"
+               },
+               "RepeatCount": "${TestRepeatCount}",
+               "Description": "64MB Block, Data Volume 16GB",
+               "Hint": "Data",
+               "InputVector": {
+                  "BlockSize": 67108864,
+                  "DirectoryName": "${DataVolume}",
+                  "FileOverwrite": false,
+                  "FileSize": 17179869184,
+                  "RandomAccess": true,
+                  "RandomData": true,
+
+                  "AsyncReadSubmit": "${DataAsyncReadSubmit}",
+                  "AsyncWriteSubmitActive": "${DataAsyncWriteSubmitActive}",
+                  "AsyncWriteSubmitBlocks": "${DataAsyncWriteSubmitBlocks}",
+                  "ExtMaxParallelIoRequests": "${DataExtMaxParallelIoRequests}",
+                  "ExtMaxSubmitBatchSize": "${DataExtMaxSubmitBatchSize}",
+                  "ExtMinSubmitBatchSize": "${DataExtMinSubmitBatchSize}",
+                  "ExtNumCompletionQueues": "${DataExtNumCompletionQueues}",
+                  "ExtNumSubmitQueues": "${DataExtNumSubmitQueues}",
+                  "ExtSizeKernelIoQueue": "${ExtSizeKernelIoQueue}"
+               }
+            },
+            {
+               "ScaleOut": {
+                  "Port": "${RemotePort}",
+                  "Hosts": "${Hosts}",
+                  "ConcurrentExecution": "${FSConcurrentExecution}"
+               },
+
+               "RepeatCount": "${TestRepeatCount}",
+               "Description": "64MB Block, Data Volume 16GB, Overwrite",
+               "Hint": "Data",
+               "InputVector": {
+                  "BlockSize": 67108864,
+                  "DirectoryName": "${DataVolume}",
+                  "FileOverwrite": true,
+                  "FileSize": 17179869184,
+                  "RandomAccess": true,
+                  "RandomData": true,
+
+                  "AsyncReadSubmit": "${DataAsyncReadSubmit}",
+                  "AsyncWriteSubmitActive": "${DataAsyncWriteSubmitActive}",
+                  "AsyncWriteSubmitBlocks": "${DataAsyncWriteSubmitBlocks}",
+                  "ExtMaxParallelIoRequests": "${DataExtMaxParallelIoRequests}",
+                  "ExtMaxSubmitBatchSize": "${DataExtMaxSubmitBatchSize}",
+                  "ExtMinSubmitBatchSize": "${DataExtMinSubmitBatchSize}",
+                  "ExtNumCompletionQueues": "${DataExtNumCompletionQueues}",
+                  "ExtNumSubmitQueues": "${DataExtNumSubmitQueues}",
+                  "ExtSizeKernelIoQueue": "${ExtSizeKernelIoQueue}"
+               }
+            }
+         ]
+      },
+      {
+         "Note": "File System Read Test",
+         "ID": "168B7333-86D4-1334-A300F54B104B6ADB",
+
+         "ExecutionVariants": [
+            {
+               "ScaleOut": {
+                  "Port": "${RemotePort}",
+                  "Hosts": "${Hosts}",
+                  "ConcurrentExecution": "${FSConcurrentExecution}"
+               },
+               "RepeatCount": "${TestRepeatCount}",
+               "Description": "64MB Block, Data Volume 16GB",
+               "Hint": "Data",
+               "InputVector": {
+                  "BlockSize": 67108864,
+                  "DirectoryName": "${DataVolume}",
+                  "FileOverwrite": true,
+                  "FileSize": 17179869184,
+                  "RandomAccess": true,
+                  "RandomData": true,
+
+                  "AsyncReadSubmit": "${DataAsyncReadSubmit}",
+                  "AsyncWriteSubmitActive": "${DataAsyncWriteSubmitActive}",
+                  "AsyncWriteSubmitBlocks": "${DataAsyncWriteSubmitBlocks}",
+                  "ExtMaxParallelIoRequests": "${DataExtMaxParallelIoRequests}",
+                  "ExtMaxSubmitBatchSize": "${DataExtMaxSubmitBatchSize}",
+                  "ExtMinSubmitBatchSize": "${DataExtMinSubmitBatchSize}",
+                  "ExtNumCompletionQueues": "${DataExtNumCompletionQueues}",
+                  "ExtNumSubmitQueues": "${DataExtNumSubmitQueues}",
+                  "ExtSizeKernelIoQueue": "${ExtSizeKernelIoQueue}"
+               }
+            }
+         ]
+      }
+   ]
+}
