@@ -38,10 +38,8 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
      * Azure: m1_128s
      * GCP; n1-highmem-32
      * AWS: C5.18xlarge
-
  * Linux Distro:
      * SLES
-
  * Mount Options: 
       * for SLES12SP4 and up as of 8/2019
          > nfs rd,nointr,rsize=32768,wsize=32768,bg,nconnect=[8 or 16 seem the best so far]
@@ -49,8 +47,8 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
          > nfs rd,nointr,rsize=32768,wsize=32768,bg
 
 * Packages:
-  > zypper update -y
-  > zypper install -y sysstat python
+    > zypper update -y
+    > zypper install -y sysstat python
 
 #How To Modify The Execution Plan JSON Files:
   *The contents of both json files look something like below, pay attention to 0th, 1st, 2nd, and 4th posiitons in the list
