@@ -116,8 +116,9 @@ suse12sp4:/home/mchad# ./hcmt -v -p executionplan-storage-full.json
 
 ## The Results Of Each Test:
 Each test will create a zip file named for the YearMonthDayHrMinSec to the pwd such as hcmtresult-20190815142636.zip.   
-   > The results of each round of testing will end up in  the Results/ directory as shown below, so you may want to move each    
-   > hcmtresult*.zip file to its own directory to keep the unziped files from clobbering one another
+   > The results of each round of testing will end up in  the Results/ directory as shown below, 
+   > so you may want to move each hcmtresult*.zip file to its own directory to keep the unziped 
+   > files from clobbering one another
 
 ### Contents of zip file:
 _Note_ The results json files will always contain A300F54B104B6ADB.json and A904F304AEB67906.json in the their names
