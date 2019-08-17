@@ -1,5 +1,5 @@
 
-### This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,the workload is synthetic.  
+This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,the workload is synthetic.  
 
 * Included are:
     * Details on the included files and how to use
@@ -14,8 +14,9 @@
     * HCMT_V201_TDI_10K_adapted.xlsx, 
     * sysctl.conf
 
+```
  * The file hcmtsetup-50beta.exe is a type of compressed archive, execute it to extract all pre-packaged files from SAP
-  - Extraction of the files from the hcmtsetup is as simple as ./hcmtsetip-50beta.exe
+  Extraction of the files from the hcmtsetup is as simple as ./hcmtsetip-50beta.exe
   - All files will be extracted to the pwd, the most important file to you is ./hcmt which is the tool you will need to use. More on that in a minute.
  
  *The tar file also include two json files, these are execution plans used by ./hcmt, more on how to use in a minute
@@ -24,6 +25,7 @@
 
  *HCMT_V201_TDI_10K_adapter.xlsx is a the workbook all results are to be loaded into
 
+```
 
 
 #Configuration Requirments:
