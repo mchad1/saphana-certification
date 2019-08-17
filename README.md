@@ -15,18 +15,23 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
     * sysctl.conf
 
 
-    > The file hcmtsetup-50beta.exe is a type of compressed archive, execute it to extract all pre-packaged files from SAP
+* hcmtsetup-50beta.exe 
+    >  a type of compressed archive, execute it to extract all pre-packaged files from SAP
     >  Extraction of the files from the hcmtsetup is as simple as ./hcmtsetip-50beta.exe
     >  All files will be extracted to the pwd, the most important file to you is ./hcmt which is the tool you will need to use. 
     >  More on that in a minute.
  
  
-    > The tar file also include two json files, these are execution plans used by ./hcmt, more on how to use in a minute
+* executionplan.json files
+    > these are execution plans used by ./hcmt, more on how to use in a minute
     > The json executionplan-data-64.json is a short test which you should use to ensure the test suite works in your env, its fairly short.
     > The json executionplan-storage-full.json is the ACTUAL storage test, this test takes about 3 hours per iteration
 
 
-    > HCMT_V201_TDI_10K_adapter.xlsx is a the workbook all results are to be loaded into
+*HCMT_V201_TDI_10K_adapter.xlsx 
+    > a the workbook all results are to be loaded into.
+    > Open the included .xlsx file and see follow steps 2 onward as shown in the How To Use Tab of the workbook. 
+   
 
 
 
@@ -133,7 +138,6 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
   done >> test.txt
 
 #How To Use The Data Above:
-  *Open the included .xlsx file and see follow steps 2 onward as shown in the How To Use Tab of the workbook. 
-   The content in the test.txt file from above is used to popluate column A in worksheet "Raw Result HCMT" in the workbook
+  The content in the test.txt file from above is used to popluate column A in worksheet "Raw Result HCMT" in the workbook
 
 
