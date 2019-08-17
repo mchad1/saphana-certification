@@ -72,61 +72,102 @@ How To Modify The Execution Plan JSON Files:
   Replace the value associated with the key "Value" with the number of tests to run
 
   {
+  
      "Variables": [
-        {
-           "Comment": "The <Value> should be adapted to the HANA log volume path",
-           "Name": "LogVolume",
-           "Value": "/mnt/kpi",
-           "Request": "false"
+  
+       {
+       
+       "Comment": "The <Value> should be adapted to the HANA log volume path",
+       
+       "Name": "LogVolume",
+       
+       "Value": "/mnt/kpi",
+       
+       "Request": "false"
         },
-        {
-           "Comment": "The <Value> should be adapted to the HANA data volume path",
-           "Name": "DataVolume",
-           "Value": "/mnt/kpi",
-           "Request": "false",
-           "Profile": "LNX"
-        },
-        {
-           "Comment": "Hosts for scale-out measurements, keep this empty for scale-up",
-           "Name": "Hosts",
-           "Value": "",
-           "Request": "false"
-        },
-        {
-           "Comment": "Persistent memory mount pathes, keep this empty fo non nvm systems",
-           "Name": "NvmBasePath",
-           "Value": "",
-           "Request": "false"
-        },
-        {
-           "Comment": "The <Value> is the general test repeat count",
-           "Name": "TestRepeatCount",
-           "Value": "3",
-           "Request": "false"
-        },
+       
+       {
+       
+       "Comment": "The <Value> should be adapted to the HANA data volume path",
+       
+       "Name": "DataVolume",
+       
+       "Value": "/mnt/kpi",
+              
+       "Request": "false",
+       
+       "Profile": "LNX"
+       
+       },
+       
+       {
+       
+       "Comment": "Hosts for scale-out measurements, keep this empty for scale-up",
+       
+       "Name": "Hosts",
+       
+       "Value": "",
+       
+       "Request": "false"
+       
+       },
+       
+       {
+       
+       "Comment": "Persistent memory mount pathes, keep this empty fo non nvm systems",
+       
+       "Name": "NvmBasePath",
+       
+       "Value": "",
+       
+       "Request": "false"
+       
+       },
+       
+       {
+       
+       "Comment": "The <Value> is the general test repeat count",
+       
+       "Name": "TestRepeatCount",
+       
+       "Value": "3",
+       
+       "Request": "false"
+       
+       },
+
+
 
 How To Run:
 
- *The quick validation run 
- # suse12sp4:/home/mchad# ./hcmt -v -p executionplan-data-64.json  
 
- *The ACTUAL storage test
- # suse12sp4:/home/mchad# ./hcmt -v -p executionplan-storage-full.json  
+
+*The quick validation run 
+
+# suse12sp4:/home/mchad# ./hcmt -v -p executionplan-data-64.json  
+
+
+
+*The ACTUAL storage test
+
+# suse12sp4:/home/mchad# ./hcmt -v -p executionplan-storage-full.json  
 
 
 The Results Of Each Test:
 
- *Each test will create a zip file named for the YearMonthDayHrMinSec to the pwd as such:
-  hcmtresult-20190815142636.zip, we ought to preserve the zip files to object storage OR preserve the contents to a DB but thats another story
- 
- *The contents of each zip file is a such
-    manifest.json
-    hcmtresult-20190815142636.zip
-    config/
-    Results/
-        168B7333-86D4-1334-A300F54B104B6ADB.json
-        D664D001-933D-41DE-A904F304AEB67906.json
-    RawInfo/
+*Each test will create a zip file named for the YearMonthDayHrMinSec to the pwd as such:
+
+hcmtresult-20190815142636.zip, we ought to preserve the zip files to object storage OR preserve the contents to a DB but thats another story
+
+*The contents of each zip file is a such
+
+# manifest.json
+#    hcmtresult-20190815142636.zip
+#    config/
+#    Results/
+#        168B7333-86D4-1334-A300F54B104B6ADB.json
+#        D664D001-933D-41DE-A904F304AEB67906.json
+#    RawInfo/
 
  *The results of each round of testing will end up in  the Results/ directory as shown above, so you may want to move each hcmtresult*.zip file
   to its own directory to keep the unziped files from clobbering one another
