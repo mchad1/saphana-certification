@@ -104,7 +104,7 @@ The contents of both json files look something like below, pay attention to 0th,
        },
 ```
 
-##How To Run:
+## How To Run:
 ### The quick validation run:
 ```
 suse12sp4:/home/mchad# ./hcmt -v -p executionplan-data-64.json  
