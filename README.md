@@ -14,11 +14,11 @@ Included are:
 Included Files:
 
  *Five files were included in this REPO:
-  README.md,
-  hcmtsetup.exe,  
-  two execution plan json files,  
-  HCMT_V201_TDI_10K_adapted.xlsx, 
-  sysctl.conf
+  1) README.md
+  2) hcmtsetup.exe,  
+  3) two execution plan json files,  
+  4) HCMT_V201_TDI_10K_adapted.xlsx, 
+  5) sysctl.conf
 
  *The file hcmtsetup-50beta.exe is a type of compressed archive, execute it to extract all pre-packaged files from SAP
   Extraction of the files from ythe hcmtsetup is as simple as ./hcmtsetip-50beta.exe
