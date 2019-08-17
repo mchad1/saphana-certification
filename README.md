@@ -1,10 +1,11 @@
 
+## A High Level View
 This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,the workload is synthetic.  
 
-* Included are:
-    * Details on the included files and how to use
-    * Configuration Details (Instance Types, OS Distros, Mount Options, Tunables)
-    * Details on how to run the test
+Included are:
+* Details on the included files and how to use
+* Configuration Details (Instance Types, OS Distros, Mount Options, Tunables)
+* Details on how to run the test
  
 ### Included Files:
 * Five files were included in this REPO:
@@ -13,23 +14,18 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
     * two execution plan json files,  
     * HCMT_V201_TDI_10K_adapted.xlsx, 
     * sysctl.conf
-
-
 * hcmtsetup-50beta.exe 
     >  a type of compressed archive, execute it to extract all pre-packaged files from SAP
     >  Extraction of the files from the hcmtsetup is as simple as ./hcmtsetip-50beta.exe
     >  All files will be extracted to the pwd, the most important file to you is ./hcmt which is the tool you will need to use. 
     >  More on that in a minute.
- 
- 
-* executionplan.json files
+ * executionplan.json files
     > these are execution plans used by ./hcmt, more on how to use in a minute
-    > The json executionplan-data-64.json is a short test which you should use to ensure the test suite works in your env, its fairly short.
-    > The json executionplan-storage-full.json is the ACTUAL storage test, this test takes about 3 hours per iteration
-
-
+    > The json executionplan-data-64.json is a short test which you should use to ensure the test
+    > suite works in your env, its fairly short. The json executionplan-storage-full.json is the 
+    > ACTUAL storage test, this test takes about 3 hours per iteration
 * HCMT_V201_TDI_10K_adapter.xlsx 
-    > a the workbook all results are to be loaded into.
+    > The workbook where in all results are to be loaded into.
     > Open the included .xlsx file and see follow steps 2 onward as shown in the How To Use Tab of the workbook. 
    
 ## Configuration Requirments:
@@ -113,7 +109,6 @@ suse12sp4:/home/mchad# ./hcmt -v -p executionplan-data-64.json
 ```
 suse12sp4:/home/mchad# ./hcmt -v -p executionplan-storage-full.json  
 ```
-
 ## The Results Of Each Test:
 Each test will create a zip file named for the YearMonthDayHrMinSec to the pwd such as hcmtresult-20190815142636.zip.   
    > The results of each round of testing will end up in  the Results/ directory as shown below, 
@@ -131,8 +126,6 @@ Results/
        D664D001-933D-41DE-A904F304AEB67906.json
 RawInfo/
 ```
-
-
 ### How To Extract Content From The Results JSON Files:
 ```
   for file in `ls Results/*A904F304AEB67906.json; do 
@@ -148,5 +141,3 @@ RawInfo/
 
 ### How To Use The Data Above:
 The content in the test.txt file from above is used to popluate column A in worksheet "Raw Result HCMT" in the workbook
-
-
