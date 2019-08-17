@@ -59,7 +59,7 @@ Included Files:
    *4th: Run Count
     Replace the value associated with the key "Value" with the number of tests to run
   
-  '''
+  ```
   {
      "Variables": [
        {
@@ -94,7 +94,7 @@ Included Files:
        "Request": "false"
        },
 
-   '''
+   ```
 #How To Run:
 
   *The quick validation run 
