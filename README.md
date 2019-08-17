@@ -7,10 +7,6 @@ Included are:
  *Configuration Details (Instance Types, OS Distros, Mount Options, Tunables)
  *Details on how to run the test
  
-
-
-
-
 Included Files:
 
  *Five files were included in this REPO:
@@ -21,8 +17,9 @@ Included Files:
   5) sysctl.conf
 
  *The file hcmtsetup-50beta.exe is a type of compressed archive, execute it to extract all pre-packaged files from SAP
-  Extraction of the files from ythe hcmtsetup is as simple as ./hcmtsetip-50beta.exe
-  All files will be extracted to the pwd, the most important file to you is ./hcmt which is the tool you will need to use.  More on that in a minute.
+  Extraction of the files from the hcmtsetup is as simple as ./hcmtsetip-50beta.exe
+  All files will be extracted to the pwd, the most important file to you is ./hcmt which is the tool you will need to use.  
+  More on that in a minute.
  
  *The tar file also include two json files, these are execution plans used by ./hcmt, more on how to use in a minute
   The json executionplan-data-64.json is a short test which you should use to ensure the test suite works in your env, its fairly short.
@@ -35,9 +32,9 @@ Included Files:
 Configuration Requirments:
 
  *Instance Types:
-  Azure: m1_128s
-  GCP; n1-highmem-32
-  AWS: C5.18xlarge
+  1) Azure: m1_128s
+  2) GCP; n1-highmem-32
+  3) AWS: C5.18xlarge
 
  *Linux Distro: SLES
 
