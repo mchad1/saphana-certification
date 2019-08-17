@@ -120,14 +120,15 @@ Each test will create a zip file named for the YearMonthDayHrMinSec to the pwd s
    > hcmtresult*.zip file to its own directory to keep the unziped files from clobbering one another
 
 ### Contents of zip file:
+_Note_ The results json files will always contain A300F54B104B6ADB.json and A904F304AEB67906.json in the their names
 ```
 manifest.json
-    hcmtresult-20190815142636.zip
-    config/
-    Results/
-        168B7333-86D4-1334-A300F54B104B6ADB.json
-        D664D001-933D-41DE-A904F304AEB67906.json
-    RawInfo/
+hcmtresult-20190815142636.zip
+config/
+Results/
+       168B7333-86D4-1334-A300F54B104B6ADB.json
+       D664D001-933D-41DE-A904F304AEB67906.json
+RawInfo/
 ```
 
 
