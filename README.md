@@ -48,22 +48,7 @@ Configuration Requirments:
   zypper update -y
   zypper install -y sysstat python
 
- *Tunables (place these in /etc/sysctl.conf and then execute sysctl -p)
-  net.core.rmem_max = 16777216
-  net.core.wmem_max = 16777216
-  net.core.rmem_default = 16777216
-  net.core.wmem_default = 16777216
-  net.core.optmem_max = 16777216
-  net.ipv4.tcp_rmem = 65536 16777216 16777216
-  net.ipv4.tcp_wmem = 65536 16777216 16777216
-  net.core.netdev_max_backlog = 300000
-  net.ipv4.tcp_slow_start_after_idle=0
-  net.ipv4.tcp_no_metrics_save = 1
-  net.ipv4.tcp_moderate_rcvbuf = 1
-  net.ipv4.tcp_window_scaling = 1
-  net.ipv4.tcp_timestamps = 1
-  net.ipv4.tcp_sack = 1
-  sunrpc.tcp_max_slot_table_entries = 128
+
 
 
 
