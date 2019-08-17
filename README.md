@@ -42,9 +42,13 @@ This README will walk you through all the steps required to run the HCOT SAP HAN
      * SLES
  * Mount Options: 
       * for SLES12SP4 and up as of 8/2019
-         ``` nfs rd,nointr,rsize=32768,wsize=32768,bg,nconnect=[8 or 16 seem the best so far]```
+         ``` 
+         nfs rd,nointr,rsize=32768,wsize=32768,bg,nconnect=[8 or 16 seem the best so far]
+         ```
       * Earlier versions
-         ```nfs rd,nointr,rsize=32768,wsize=32768,bg```
+         ```
+         nfs rd,nointr,rsize=32768,wsize=32768,bg
+         ```
 
 * Packages:
     * sysstat
