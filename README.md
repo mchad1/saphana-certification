@@ -1,14 +1,12 @@
 
-This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,
-the workload is synthetic.  
+This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,the workload is synthetic.  
 
-Included are:
-
- *Details on the included files and how to use
- *Configuration Details (Instance Types, OS Distros, Mount Options, Tunables)
- *Details on how to run the test
+* Included are:
+    * Details on the included files and how to use
+    * Configuration Details (Instance Types, OS Distros, Mount Options, Tunables)
+    * Details on how to run the test
  
-Included Files:
+###Included Files:
 
  *Five files were included in this REPO:
   1) README.md
