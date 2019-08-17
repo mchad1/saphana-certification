@@ -1,4 +1,4 @@
-```
+
 This README will walk you through all the steps required to run the HCOT SAP HANA storage validation test.  SAP HANA is NOT used in this validation,
 the workload is synthetic.  
 
@@ -32,10 +32,10 @@ Included Files:
 
 #Configuration Requirments:
 
- *Instance Types:
-  1) Azure: m1_128s
-  2) GCP; n1-highmem-32
-  3) AWS: C5.18xlarge
+ * Instance Types:
+     * Azure: m1_128s
+     * GCP; n1-highmem-32
+     * AWS: C5.18xlarge
 
  *Linux Distro: SLES
 
@@ -60,7 +60,7 @@ Included Files:
    *4th: Run Count
     Replace the value associated with the key "Value" with the number of tests to run
   
-
+```
   {
      "Variables": [
        {
@@ -94,6 +94,7 @@ Included Files:
        "Value": "3",
        "Request": "false"
        },
+```
 
 #How To Run:
 
@@ -134,6 +135,5 @@ Included Files:
 #How To Use The Data Above:
   *Open the included .xlsx file and see follow steps 2 onward as shown in the How To Use Tab of the workbook. 
    The content in the test.txt file from above is used to popluate column A in worksheet "Raw Result HCMT" in the workbook
-```
 
 
