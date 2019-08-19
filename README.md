@@ -8,7 +8,7 @@ Included are:
 * Details on how to run the test
  
 ### Included Files:
-* Five files were included in this REPO:
+* Six files were included in this REPO:
     * README.md
     * hcmtsetup.exe,   
     * two execution plan json files,  
@@ -128,14 +128,14 @@ RawInfo/
 ```
 ### How To Extract Content From The Results JSON Files:
 ```
-  for file in `ls Results/*A904F304AEB67906.json; do 
-      echo Restuls/$file 
-      cat Results/$file 
+  for file in `ls Results/*A904F304AEB67906.json`; do 
+      echo $file 
+      cat $file 
   done > test.txt
 
-  for file in `ls Results/*A300F54B104B6ADB.json; do
-      echo Restuls/$file 
-      cat Results/$file 
+  for file in `ls Results/*A300F54B104B6ADB.json`; do
+      echo $file 
+      cat $file 
   done >> test.txt
 ```
 
