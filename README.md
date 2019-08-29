@@ -32,17 +32,17 @@ Included are:
 ### Instance Types:
 * Azure: m1_128s
 * GCP: n1-highmem-32
-* AWS: C5.18xlarge
+* AWS: m.24xlarge
 ### Linux Distro:
 * SLES
 ### Mount Options: 
 * for SLES12SP4 and up as of 8/2019
     ``` 
-    nfs rd,nointr,rsize=32768,wsize=32768,bg,nconnect=[8 or 16 seem the best so far]
+    nfs nointr,rsize=262144,wsize=262144,bg,nconnect=[8 or 16 seem the best so far]
     ```
 * Earlier versions
     ```
-    nfs rd,nointr,rsize=32768,wsize=32768,bg
+    nfs nointr,rsize=262144,wsize=262144,bg
     ```
 ### Packages:
 * sysstat
